@@ -1,0 +1,46 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <!-- <ion-button color='primary' (click)="startApp()" [hidden]="!showSkip">Skip</ion-button> -->
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="false">
+    <ion-slide>
+      <img src="../../../assets/img/grocceries.svg" class="slide-image" />
+      <h2 class="slide-title">
+        Welcome to Easy Shopper
+      </h2>
+      <p>
+        Compare food prices and create shopping lists easily.
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="../../../assets/img/shopping.svg" class="slide-image" />
+      <h2 class="slide-title">Go shopping</h2>
+      <p>
+        Get a price estimation of your lists and go do your shopping.
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="../../../assets/img/save.svg" class="slide-image" />
+      <h2 class="slide-title">Save money</h2>
+      <p>
+        You'll only buy the cheapest products using Easy Shopper
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="../../../assets/img/color easy shopper-01.png" class="slide-image" />
+      <h2 class="slide-title">Ready to <b>save money</b>?</h2>
+      <ion-button fill="clear" (click)="startApp()">
+        Start
+        <ion-icon slot="end" name="arrow-forward"></ion-icon>
+      </ion-button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
